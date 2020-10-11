@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Employee</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-firestore.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <form method="POST" class = 'nameId-form'>
+        <h1>Get Employee Data</h1><br>
+        <div class='data'>
+            <label for='name'>Name:</label>
+            <input type='text' name='name'>
+        </div>
+
+        <div class='data'>
+            <label for='E-mail'>E-mail:</label>
+            <input type='email' name='email'>
+        </div><br>
+
+        
+
+        <input type='submit' onclick = 'getData()' class="btn">
+
+    </form>
+    <div class='profile' style="display: none;">
+        <h2>Profile</h2>
+        <ul class='profile-ul'>
+            <li></li>
+            <li ></li>
+            <li ></li>
+            <li></li>
+        </ul>
+    <a href='homePage.html'>Homepage</a>
+    </div>
+    <script src='control.js'></script>
+</body>
+</html>

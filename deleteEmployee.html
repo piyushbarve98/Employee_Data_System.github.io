@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Employee</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-firestore.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <form method="POST" class="delete-form">
+        <h1>Delete Employee Data</h1><br>
+        <div class='data'>
+            <label for='name'>Name:</label>
+            <input type='text' name='name'>
+        </div>
+
+        <div class='data'>
+            <label for='E-mail'>E-mail:</label>
+            <input type='email' name='email'>
+        </div>
+
+        <div class='data'>
+            <label for='code'>Code:</label>
+            <input type='text' name='code'>
+        </div><br>
+
+        <input type='submit' onclick='delData()' class="btn">
+
+    </form>
+    <script src='control.js'></script>
+</body>
+</html>

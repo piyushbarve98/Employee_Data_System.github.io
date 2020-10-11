@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Employee</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-firestore.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+    <form method="POST" class='insert-form'>
+        <h1>Add Employee Data</h1><br>
+        <div class='data'>
+            <label for='name'>Name:</label>
+            <input type='text' name='name' required>
+        </div>
+
+        <div class='data'>
+            <label for='email'>E-mail:</label>
+            <input type='email' name='email' required>
+        </div>
+
+        <div class='data'>
+            <label for='age'>Age:</label>
+            <input type='number' name='age' required>
+        </div>
+
+        <div class='data'>
+            <label for='salary'>Salary:</label>
+            <input type='number' name='salary' required>
+        </div><br>
+
+        <input type='submit' onclick='insertData()' class="btn">
+
+    </form>
+    <script src='control.js'></script>
+</body>
+</html>
