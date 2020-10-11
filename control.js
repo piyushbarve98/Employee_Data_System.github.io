@@ -29,7 +29,7 @@
             salary: form.salary.value
           }).then(()=>{
               alert('Data Uploaded');
-              location.href= 'homePage.html';
+              location.href= 'index.html';
           });
 
       })
@@ -47,7 +47,7 @@
           snapshot.forEach(doc=>{
                 doc.ref.delete().then(()=>{
                     alert('Item deleted succesfully');
-                    location.href='homePage.html';
+                    location.href='index.html';
                 }).catch(error=>{
                   alert('Error removing data');
                 });
