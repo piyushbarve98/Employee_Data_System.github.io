@@ -110,5 +110,14 @@ input{
     .profile{
         padding: 2rem 2.2rem;
     }
+    h1{
+        font-size: 1.6em;
+    }
+    label{
+        font-size:1.3em;
+    }
+    input{
+        font-size:1.3em;
+    }
     
 }
