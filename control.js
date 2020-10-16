@@ -30,6 +30,8 @@
           }).then(()=>{
               alert('Data Uploaded');
               location.href= 'index.html';
+          }).catch((error)=>{
+            alert('Process Failed due to'+ error);
           });
 
       })
@@ -98,9 +100,16 @@
     form.addEventListener('submit',(e)=>{
       e.preventDefault();
       db.collection('employees').where('name','==',form.name.value).where('email','==',form.email.value).get().then(snapshot=>{
-          snapshot.forEach(doc=>{
+        if(!(snapshot.empty)){
+        snapshot.forEach(doc=>{
             showProfile(doc.data());
           });
+        }
+        else{
+          alert('No such data found');
+        }
+    }).catch((error)=>{
+      alert('Sorry, There is an error')
     });
     });
     

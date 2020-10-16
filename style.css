@@ -127,6 +127,9 @@ label{
 }
 
 @media only screen and (max-width:500px){
+    html{
+        font-size: 1em;
+    }
     form{
         width: 70%;
     }
@@ -138,6 +141,14 @@ label{
     }
     label{
         font-size:1em;
+    }
+    
+    
+}
+
+@media only screen and (max-width:400px){
+    html{
+        font-size: 0.9em;
     }
     
     
