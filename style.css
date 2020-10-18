@@ -29,6 +29,28 @@ form{
     background-color: rgba(208, 229, 243, 0.884);
     
 }
+@keyframes ayush {
+  0% {color:magenta; text-shadow:0 0 10px magenta;}
+  10% {color:purple; text-shadow:0 0 10px purple;}
+  20% {color:blue; text-shadow:0 0 10px blue;}
+  30% {color:aqua; text-shadow:0 0 10px aqua;}
+  40% {color:#0dfc91; text-shadow:0 0 10px #0dfc91;}
+  50% {color:#11fc0d; text-shadow:0 0 10px #11fc0d;}
+  60% {color:#99fc0d; text-shadow:0 0 10px #99fc0d;}
+  70% {color:#e8fc0d; text-shadow:0 0 10px #e8fc0d;}
+  80% {color:#fcd40d; text-shadow:0 0 10px #fcd40d;}
+  90% {color:#fca90d; text-shadow:0 0 10px #fca90d;}
+  100% {color:red; text-shadow:0 0 10px red;}
+
+}
+#bla {
+  text-align:center;
+  color:magenta;
+  font-size:12px;
+  animation-name:ayush;
+  animation-duration:5s;
+  animation-iteration-count:infinite;
+}
 h1{
     font-size: 1.25em;
     padding: 0.5rem 1.9rem;    
