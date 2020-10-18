@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Lobster&family=Satisfy&display=swap');
 
 *{
     margin:0em;
@@ -12,7 +13,7 @@ body{
     font-family: 'Quicksand', sans-serif;
     height: 100vh;
     /* background-color: rgba(33, 122, 173, 0.733); */
-    background-image: radial-gradient( circle 465px at -15.1% -25%,  rgba(17,130,193,1) 0%, rgba(67,166,238,1) 49%, rgba(126,203,244,1) 90.2% );
+    background-image: radial-gradient( circle 465px at -15.1% -25%,  rgb(35, 50, 59) 0%, rgb(29, 36, 41) 49%, rgb(29, 32, 34) 90.2% );
 }
 
 form{
@@ -26,39 +27,45 @@ form{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5); 
     padding: 2rem;
     /* background-color: rgb(255, 255, 255); */
-    background-color: rgba(208, 229, 243, 0.884);
+    background-color: rgba(252, 251, 253, 0.904);
+    border-radius: 14px;
     
 }
 @keyframes ayush {
-  0% {color:magenta; text-shadow:0 0 10px magenta;}
-  10% {color:purple; text-shadow:0 0 10px purple;}
-  20% {color:blue; text-shadow:0 0 10px blue;}
-  30% {color:aqua; text-shadow:0 0 10px aqua;}
-  40% {color:#0dfc91; text-shadow:0 0 10px #0dfc91;}
-  50% {color:#11fc0d; text-shadow:0 0 10px #11fc0d;}
-  60% {color:#99fc0d; text-shadow:0 0 10px #99fc0d;}
-  70% {color:#e8fc0d; text-shadow:0 0 10px #e8fc0d;}
-  80% {color:#fcd40d; text-shadow:0 0 10px #fcd40d;}
-  90% {color:#fca90d; text-shadow:0 0 10px #fca90d;}
-  100% {color:red; text-shadow:0 0 10px red;}
+    0% {color:magenta; text-shadow:0 0 10px magenta;}
+    10% {color:purple; text-shadow:0 0 10px purple;}
+    20% {color:blue; text-shadow:0 0 10px blue;}
+    30% {color:aqua; text-shadow:0 0 10px aqua;}
+    40% {color:#0dfc91; text-shadow:0 0 10px #0dfc91;}
+    50% {color:#11fc0d; text-shadow:0 0 10px #11fc0d;}
+    60% {color:#99fc0d; text-shadow:0 0 10px #99fc0d;}
+    70% {color:#e8fc0d; text-shadow:0 0 10px #e8fc0d;}
+    80% {color:#fcd40d; text-shadow:0 0 10px #fcd40d;}
+    90% {color:#fca90d; text-shadow:0 0 10px #fca90d;}
+    100% {color:red; text-shadow:0 0 10px red;
+    }
 
 }
 #bla {
   text-align:left;
   color:magenta;
-  font-size:12px;
+  font-size: 1.1em;
   animation-name:ayush;
   animation-duration:5s;
   animation-iteration-count:infinite;
+  margin-top:0.6rem;
 }
 h1{
-    font-size: 1.25em;
+    font-size: 1.5em;
     padding: 0.5rem 1.9rem;    
     text-align: center;
-    box-shadow: 0 8px 16px 0 rgba(24, 24, 24, 0.2);
-    background-color: rgba(32, 105, 189, 0.836);
-    color: white;
+    /* box-shadow: 0 8px 16px 0 rgba(24, 24, 24, 0.2); */
+    color: red;
+    border: 2px solid red;
+    background-color: rgba(253, 253, 253, 0.062);
     
+    border-radius: 24px;
+    font-family: 'Satisfy', cursive;
     
 
 }
@@ -74,8 +81,8 @@ input{
     font-size:1em;
     padding: 0.3rem;
     border:none;
-    border-bottom: 2px solid rgb(19, 113, 221);
-    background-color: rgba(208, 229, 243, 0.884);
+    border-bottom: 2px solid rgba(250,45,66,1);
+    background-color: rgba(252, 251, 253, 0);
     outline: none;
 }
 .btn{
@@ -85,8 +92,13 @@ input{
     font-family: 'Quicksand', sans-serif;
     border:none;
     color: white;
-    background-color:rgba(32, 105, 189, 0.836) ;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(238,56,56,1) 0%, rgba(206,21,0,0.92) 90.1% );
     cursor: pointer;
+    border-radius: 14px;
+}
+
+.btn:hover{
+    opacity: 0.7;
 }
 label{
     align-self: center;
@@ -95,7 +107,7 @@ label{
     width: 4rem;
     padding: 0.3rem 0.6rem;
     /* box-shadow: 0 8px 16px 0 rgba(24, 24, 24, 0.2); */
-    background-color: rgba(40, 141, 209, 0.836);
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(238,56,56,1) 0%, rgba(206,21,0,0.92) 90.1% );
     color: white;
     border-radius: 18px;
     margin-bottom: 0.5rem;
@@ -104,19 +116,27 @@ label{
 
 .profile{
     
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5); 
     padding: 2rem 4rem;
-    background-color: rgba(255, 255, 255, 0.829);
-    box-shadow: 0 8px 16px 0 rgba(24, 24, 24, 0.2);
+    /* background-color: rgb(255, 255, 255); */
+    background-color: rgba(252, 251, 253, 0.904);
+    border-radius: 14px;
+    
     
 }
 .profile h2{
     font-size: 1.4em;
     text-align: center;
     margin-bottom: 1.7rem;
-    background-color: rgba(0, 102, 255, 0.877);
+    
     color: white;
     padding: 0.4rem 2rem;
-    border-radius: 10px;
+
+    color: red;
+    border: 2px solid red;
+    background-color: rgba(253, 253, 253, 0.062);
+    font-family: 'Satisfy', cursive;
+    border-radius: 24px;
 }
 .profile ul{
     text-decoration: none;
@@ -129,8 +149,9 @@ label{
     font-size: 1.1em;
     margin-bottom: 1.5rem;
     box-shadow: 0 8px 16px 0 rgba(24, 24, 24, 0.2);
-    background-color: rgba(32, 105, 189, 0.836);
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(238,56,56,1) 0%, rgba(206,21,0,0.92) 90.1% );
     color: white;
+    border-radius: 14px;
 }
 
 .profile a{
@@ -138,14 +159,19 @@ label{
     text-decoration: none;
     padding: 0.5rem 1rem ;
     margin: 4.7rem;
-    background-color: rgba(0, 102, 255, 0.877);
+    
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(238,56,56,1) 0%, rgba(206,21,0,0.92) 90.1% );
     color: white;
+    border-radius: 24px;
+
 }
 
 .profile a:hover{
-    background-color: white;
-    border: 2px solid rgba(0, 102, 255, 0.877);
-    color: rgba(0, 102, 255, 0.877);
+    
+    border: 2px solid rgba(255, 0, 0, 0.877);
+    background-image: none;
+    color: red;
+    
 }
 
 @media only screen and (max-width:500px){
